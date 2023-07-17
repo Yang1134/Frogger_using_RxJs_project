@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2022</title>
+    <style>
+      .car1 { 
+        fill: paleturquoise;
+        position: relative;
+        z-index: 1;
+      }
+      .car3 {
+        fill: pink;
+        position: relative;
+        z-index: 1;
+      }
+      .car2 {
+        fill: orange;
+        position: relative;
+        z-index: 1;
+      }
+      .log1 {
+        fill: saddlebrown;
+        position: relative;
+        z-index: 1;
+        opacity: 0.8;
+      }
+      .log2 {
+        fill: sandybrown;
+        position: relative;
+        z-index: 1;
+        opacity: 0.8;
+      }
+      .log3 {
+        fill: burlywood;
+        position: relative;
+        z-index: 1;
+        opacity: 0.8;
+      }
+      .exit {
+        fill: blue;
+        position: relative;
+        z-index: 1;
+        opacity: 0.8;
+      }
+      .frog {
+        fill: green;
+        position: absolute;
+        z-index: 1000;
+      }
+
+  
+    </style>
+  <script defer src="main.js"></script></head>
+  <body>
+    <h1>Frogger</h1>
+    <svg id="svgCanvas" width="600" height="600"> 
+      <g id='background' >
+        <rect id = "river" x="0" y="70" width = "600" height = "195" fill = "cyan"/>
+        <rect id = "middle" x="0" y="265" width = "600" height = "70" fill = "grey"/>
+      </g>
+      <g id="frog" transform="translate(300,565)"> 
+      <circle id = "frog"  r="20" fill="green"/>
+      </g>
+  </svg>
+  <h4> 
+    Instruction: <br>This game is derived from the concept of the frogger game. <br>
+    1. Get the green circle (frog) to the blue boxes at the other end. <br>
+    2. Avoid the cars, which are the first 3 rows from the bottom. <br>
+    3. Get some rest at the middle section. <br>
+    4. Get on the logs to reach the other side, avoid the river to live. 
+    The river is blue. <br>
+    5. Once you reach all 5 blue spots, score will be shown in the middle ground.<br> 
+    6. You only get 4 lives, cherish it.<br>
+    7. To make it easy, the final row has no risk at all. <br>
+    8. P.s. Reaching the blue box will take you back to the original position.
+  </h4>
+  </body>
+</html>
